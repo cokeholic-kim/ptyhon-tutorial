@@ -49,3 +49,9 @@ name = "green"
 age = 30
 print(f'나의 이름은 {name}이고 나이는 {age}이다.')
 print(f'내년이면 내 나이는 {age+1}이 됩니다')
+
+# 문자열 관련 함수
+# 문자개수세기 count('찾는 문자') ,, 위치알려주기 find('문자') ,, 문자열삽입 문자.join("문자열") 문자열사이에 문자를 삽입
+# 대문자로변환 upper() 소문자로 변환 lower() 왼쪽공백제거 문자열.lstrip() 오른쪽공백제거 문자열.rstrip() 양쪽공백제거 strip() 문자열.strip()
+# 문자열 바꾸기 문자열.replace("a","b") a => b 
+# 문자열 -->리스트 split() // str = "Life is too short" str.split() = [Life,is,too,short]  
