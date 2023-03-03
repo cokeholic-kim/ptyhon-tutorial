@@ -79,7 +79,7 @@ d1 = {'name':'green','age':30,'name':'blue'} //뒤에 같은키로 만들면 뒤
 
 제어문
 1.조건문
-        1)if문 else if문 else문
+        1)if문 elif문 else문
         if 조건문 :
                 수행할 문장
         //들여쓰기 주의        
