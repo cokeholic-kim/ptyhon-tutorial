@@ -23,7 +23,7 @@ re2 = sub(b=10,a=20)
 print(re2)
 
 # 입력값이 몇개가 될지 모를때.
-def addMany(args):
+def addMany(*args):
     result = 0
     for i in args:
         result = result + i
@@ -45,3 +45,26 @@ def sayMy(name, age, man=True):
         
 sayMy('김그린',22)
 sayMy('이블루',30,False)
+
+# 12345를 인수로 받아서 [5,4,3,2,1] 리턴
+def solution(n):
+    answer = []
+    for i in str(n):
+        answer.append(int(i))
+    answer.reverse()
+    return answer
+
+print(solution(12345))
+
+def avgNumber(*args):
+    result = 0
+    for i in args:
+        result += i 
+    return result/len(args)
+
+print(avgNumber(5,6,7,8))
+
+# 람다함수
+# lamda 매개변수1,매개변수2 : 매개변수를 사용한 표현식
+lamdaAdd = lambda a,b : a+b
+# a,b를 인수로받고 a+b를 리턴

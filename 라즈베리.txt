@@ -1,0 +1,21 @@
+라즈베리파이
+ls -l 파일 상세보기
+rw-r--r-- 소유자권한, 소유그룹권한,일반권한
+r 4
+w 2
+x 1 
+777 = rwxrwxrwx
+
+이미지 다운
+wget 링크주소
+apt-get install 프로그램이름
+
+옴의법칙
+v= ir
+i = v/r
+r = v/i
+
+i  r
+- -
+ v
+

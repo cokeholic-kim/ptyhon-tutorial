@@ -1,0 +1,44 @@
+﻿리덕스미들웨어
+
+리듀서를 처리하기에 앞서서 사전에 지정한 작업을 실행
+액션 -> 미들웨어 -> 리듀서-> 스토어
+
+const store = store=> next=> action =>{
+
+}
+
+
+//스토어 생성하기 createStore(리듀서모듈)
+const store = createStore(rootReducer,composeWithDevTools(applyMiddleware(myLogger)));
+// redux 데브툴즈사용안할때 - 미들웨어만 사용시
+const store = createStore(rootRedicer.applyMiddleware(myLogger));
+
+thunk쓰는 이유 /디스패치해주는 시점을 데이터를 받아올때까지 기다릴수있게 해주기위해
+리덕스 
+상태를 store로 관리.. //
+dispatch할때({ type:"ADD_TODO",payload:{id:1,text:"하하"} }) 여기서는 값을 바로넣을수있음
+but 값을서버로부터 받아와서 디스패치해야한다면? 
+
+리덕스
+1.store만들기
+const store = redux.createStore(리듀서,초기값)
+2.상태값 접근
+store.getState( );
+3.상태업데이트
+store.dispatch({ 액션객체 })
+4.상태구독
+store.subscribe( 함수 )
+
+리덕스 + 리액트
+1.스토어 생성 
+rootReducer 
+리덕스 모듈1 ---> 액션타입/액션생성함수/리듀서함수
+리덕스 모듈2 ---> 액션타입/액션생성함수/리듀서함수
+const rootRedicer = combineReducers({ 리덕스모듈1,리덕스모듈2 })
+const store = createStore(루트리듀서,applymiddleware(Reduxthunk))
+<Provider store={store}>
+	<App/>
+</Provider>
+
+2.프레젠테이셔널 컴포너트
+3.컨테이너 컴포넌트 useSelector(state=> state.posts.posts) / useDispatch( )

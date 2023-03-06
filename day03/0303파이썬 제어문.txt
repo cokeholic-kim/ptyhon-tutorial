@@ -2,7 +2,44 @@
 if
 elif
 else
+조건부 표현식
+    if score > 70 :
+        message = "A"
+    else :    
+        massage = "B"
+아래랑 같음
+    message = "A" if score > 70 else "B"
+
+비교 
+in ) a in b  a가 b에 있는지.
+not in ) a not in b  a가 b에 없는지.
 
 반복문
-while
-for
+while 조건:
+    실행문
+    break:반복을탈출
+    continue:반복건너뛰기
+
+for:
+    for 변수 in 리스트(또는 튜플,문자열):
+        수행할 문장...
+
+    test_list = ["one","two","three"]
+    for i in test_list:
+        print(i)
+
+    range()함수
+    range(stop) 0~stop-1 까지 숫자를 생성
+    range(start,stop) start ~ stop-1 까지 숫자를 생성
+    range(start, stop, step) start ~ stop -1 까지의
+    숫자를 step간격으로 생성.
+
+함수
+def 함수명(매개변수):
+    수행할문장
+
+def add(a,b):
+    return a+b
+
+re = add(1,2)
+re --> 3 
